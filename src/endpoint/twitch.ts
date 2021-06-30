@@ -1,5 +1,7 @@
 import { endpoint } from '@ev-fns/endpoint';
 
-export const twitchLiveStatusGet = endpoint(async (req, res) => {
-  console.log(req, res);
+export const twitchAccountLinkPost = endpoint(async (req, res) => {
+  console.log(req.headers['authorization']);
+
+  res.status(200).end();
 });
