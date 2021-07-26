@@ -3,5 +3,6 @@ declare namespace NodeJS {
     NODE_ENV: 'development' | 'test' | 'production' | 'staging';
     PORT: string;
     API_NAME: string;
+    CAT_API_KEY: string;
   }
 }
