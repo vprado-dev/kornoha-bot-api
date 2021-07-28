@@ -14,9 +14,30 @@ components:
         - message
     status:
       type: object
+
     twitchAccountLink:
       type: object
       properties:
         link:
           type: string
           example: https://id.twitch.tv/oauth2/authorize?
+
+    catResponseBody:
+      type: array
+      items:
+        type: object
+        properties:
+          breeds:
+            type: array
+          id:
+            type: string
+            example: c5b
+          url:
+            type: string
+            example: https://cdn2.thecatapi.com/images/c5k.jpg
+          width:
+            type: string
+            example: 465
+          height:
+            type: string
+            example: 700

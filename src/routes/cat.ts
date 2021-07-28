@@ -8,9 +8,8 @@ const router = Router();
  * GET /cat
  * @tag Cat
  * @security bearerAuth
- * @response 204
- * @responseContent {cat} 204.application/json
- * @response default
+ * @response 200
+ * @responseContent {catResponseBody} 200.application/json
  * @responseContent {Error} default.application/json
  */
 
