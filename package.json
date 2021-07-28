@@ -41,7 +41,9 @@
     "start": "node build/index.js",
     "build": "tsc",
     "dev": "ts-node-dev --no-notify src/index.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docker-build": "./.docker-build",
+    "docker-push": "./.docker-push"
   },
   "lint-staged": {
     "*.{js,ts}": [
