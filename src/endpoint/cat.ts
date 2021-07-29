@@ -9,7 +9,6 @@ export const catGetOne = endpoint(async (req, res) => {
   // eslint-disable-next-line no-extra-boolean-cast
   if (!!flagGif) {
     url.searchParams.append('mime_types', 'gif');
-    console.log(url.toString());
   }
 
   const response = await fetch(url.toString(), {
